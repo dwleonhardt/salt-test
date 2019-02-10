@@ -1,6 +1,6 @@
 import { assert } from 'chai'
-import {getPrice} from "../cc-api";
-import {savePrice} from "../db-scripts";
+import {getApiPrice} from "../cc-api";
+import {getCurrentPrice, savePrice} from "../db-scripts";
 import BigNumber from "bignumber.js";
 import {CoinPrice} from "../types";
 
@@ -14,4 +14,17 @@ describe('pricing monitor database tests', function() {
     savePrice(testData)
     assert(true)
   })
+
+  it('can query the most recent price for btc', async function() {
+    const testData: CoinPrice = {
+      name: 'BTC',
+      usdPrice: new BigNumber(1),
+      btcPrice: new BigNumber(1)
+    }
+    savePrice(testData)
+    const price = await getCurrentPrice('BTC')
+    console.log(price)
+    assert(price.usdPrice.isEqualTo( new BigNumber(1)))
+  })
+
 })

@@ -13,5 +13,16 @@ describe('pricing monitor database tests', function () {
         db_scripts_1.savePrice(testData);
         chai_1.assert(true);
     });
+    it('can query the most recent price for btc', async function () {
+        const testData = {
+            name: 'BTC',
+            usdPrice: new bignumber_js_1.default(1),
+            btcPrice: new bignumber_js_1.default(1)
+        };
+        db_scripts_1.savePrice(testData);
+        const price = await db_scripts_1.getCurrentPrice('BTC');
+        console.log(price);
+        chai_1.assert(price.usdPrice.isEqualTo(new bignumber_js_1.default(1)));
+    });
 });
 //# sourceMappingURL=db-tests.js.map

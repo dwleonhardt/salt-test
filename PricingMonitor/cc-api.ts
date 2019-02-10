@@ -3,7 +3,7 @@ import BigNumber from "bignumber.js";
 
 const axios = require('axios')
 
-export async function getPrice(coinName: CoinName): Promise<CoinPrice> {
+export async function getApiPrice(coinName: CoinName): Promise<CoinPrice> {
   const coinData = await axios.get(`https://coincap.io/page/${coinName}`)
   return {
     name: coinName,

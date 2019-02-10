@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const bignumber_js_1 = require("bignumber.js");
 const axios = require('axios');
-async function getPrice(coinName) {
+async function getApiPrice(coinName) {
     const coinData = await axios.get(`https://coincap.io/page/${coinName}`);
     return {
         name: coinName,
@@ -10,5 +10,5 @@ async function getPrice(coinName) {
         btcPrice: new bignumber_js_1.default(coinData.data.price_btc)
     };
 }
-exports.getPrice = getPrice;
+exports.getApiPrice = getApiPrice;
 //# sourceMappingURL=cc-api.js.map
