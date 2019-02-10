@@ -1,7 +1,7 @@
 import { assert } from 'chai'
 import {getPrice} from "../cc-api";
 
-describe('get coin price tests', function() {
+describe('pricing monitor http tests', function() {
   it('can get bitcoin pricing data', async function() {
     const btcData = await getPrice('BTC')
     console.log('btcPrice:', btcData.usdPrice.toNumber())

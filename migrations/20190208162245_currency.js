@@ -5,6 +5,8 @@ exports.up = function(knex) {
     table.string('name', 255).notNullable();
     table.decimal('price_usd').notNullable().defaultTo(0);
     table.decimal('price_btc').notNullable().defaultTo(0);
+    table.timestamp('created').notNullable().defaultTo(knex.fn.now());
+
   });
 };
 

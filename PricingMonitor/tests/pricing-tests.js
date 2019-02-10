@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const chai_1 = require("chai");
 const cc_api_1 = require("../cc-api");
-describe('get coin price tests', function () {
+describe('pricing monitor http tests', function () {
     it('can get bitcoin pricing data', async function () {
         const btcData = await cc_api_1.getPrice('BTC');
         console.log('btcPrice:', btcData.usdPrice.toNumber());
@@ -28,4 +28,4 @@ describe('get coin price tests', function () {
         chai_1.assert(typeof moneroData.btcPrice.toNumber() === "number");
     });
 });
-//# sourceMappingURL=PricingTests.js.map
+//# sourceMappingURL=pricing-tests.js.map
