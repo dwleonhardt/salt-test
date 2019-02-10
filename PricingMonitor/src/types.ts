@@ -7,3 +7,8 @@ export interface CoinPrice {
   usdPrice: BigNumber
   btcPrice: BigNumber
 }
+
+export interface MonitorSettings {
+  enabled: boolean,
+  timeout: number
+}

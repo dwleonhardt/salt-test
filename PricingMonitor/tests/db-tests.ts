@@ -1,8 +1,8 @@
 import { assert } from 'chai'
-import {getApiPrice} from "../cc-api";
-import {getCurrentPrice, savePrice} from "../db-scripts";
+import {getApiPrice} from "../src/cc-api";
+import {getCurrentPrice, savePrice} from "../src/db-scripts";
 import BigNumber from "bignumber.js";
-import {CoinPrice} from "../types";
+import {CoinPrice} from "../src/types";
 
 describe('pricing monitor database tests', function() {
   it('can save a currency pricing record', async function() {

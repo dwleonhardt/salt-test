@@ -1,9 +1,13 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const bignumber_js_1 = require("bignumber.js");
-const knex = require('../knex');
-function savePrice(coinData) {
-    knex('currency')
+const knex = require('../../knex');
+function savePrices(coinData) {
+    coinData.forEach(data => savePrice(data));
+}
+exports.savePrices = savePrices;
+async function savePrice(coinData) {
+    await knex('currency')
         .insert({
         name: coinData.name,
         price_usd: coinData.usdPrice.toNumber(),
@@ -24,4 +28,14 @@ async function getCurrentPrice(coinName) {
     };
 }
 exports.getCurrentPrice = getCurrentPrice;
+async function getMonitorSettings() {
+    const settings = await knex('monitor')
+        .select('*')
+        .limit(1);
+    return {
+        enabled: settings[0].enabled,
+        timeout: settings[0].timeout
+    };
+}
+exports.getMonitorSettings = getMonitorSettings;
 //# sourceMappingURL=db-scripts.js.map

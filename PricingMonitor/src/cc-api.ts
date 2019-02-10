@@ -11,3 +11,8 @@ export async function getApiPrice(coinName: CoinName): Promise<CoinPrice> {
     btcPrice: new BigNumber(coinData.data.price_btc)
   }
 }
+
+export async function getPrices(): Promise<Array<CoinPrice>> {
+  const coins:Array<CoinName> = ['BTC', 'LTC', 'DOGE', 'XMR']
+  return Promise.all(coins.map(async coin => await getApiPrice(coin)))
+}

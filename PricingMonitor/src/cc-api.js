@@ -11,4 +11,9 @@ async function getApiPrice(coinName) {
     };
 }
 exports.getApiPrice = getApiPrice;
+async function getPrices() {
+    const coins = ['BTC', 'LTC', 'DOGE', 'XMR'];
+    return Promise.all(coins.map(async (coin) => await getApiPrice(coin)));
+}
+exports.getPrices = getPrices;
 //# sourceMappingURL=cc-api.js.map
