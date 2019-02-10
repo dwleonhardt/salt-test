@@ -1,5 +1,5 @@
 import { assert } from 'chai'
-import {getBitcoinPrice, getDogePrice, getLiteCoinPrice, getMoneroPrice, getPrice} from "../cc-api";
+import {getPrice} from "../cc-api";
 
 describe('get coin price tests', function() {
   it('can get bitcoin pricing data', async function() {
