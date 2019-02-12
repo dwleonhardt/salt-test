@@ -1,6 +1,6 @@
 import { BigNumber } from 'bignumber.js'
 
-export type CoinName = 'BTC' | 'LTC' | 'DOGE' | 'XMR'
+export type CoinName = 'BTC' | 'LTC' | 'DOGE' | 'XMR' | 'USD'
 
 export interface CoinPrice {
   name: CoinName,
@@ -15,10 +15,23 @@ export interface MonitorSettings {
 
 export interface LedgerEntry {
   userName: string,
-  usd: number,
-  btc: number,
-  doge: number,
-  ltc: number,
-  xmr: number,
+  USD: BigNumber,
+  BTC: BigNumber,
+  DOGE: BigNumber,
+  LTC: BigNumber,
+  XMR: BigNumber,
   created: Date
+}
+
+export interface Order {
+  userName: string,
+  to: CoinName,
+  from: CoinName,
+  amount: BigNumber,
+  filled: boolean
+}
+
+export interface OrderPrice {
+  name: CoinName,
+  price: BigNumber
 }

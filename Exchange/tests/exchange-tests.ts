@@ -19,7 +19,7 @@ describe('exchange tests', function() {
   })
 
   it('can get a users most recent balance', async function() {
-    console.log(await getUserLedger(1))
+    console.log(await getUserLedger('Huey'))
     assert(true)
   })
 })

@@ -16,19 +16,37 @@ export async function getCurrentPrice(coinName: CoinName): Promise<CoinPrice> {
   }
 }
 
-export async function getUserLedger(userId: number): Promise<LedgerEntry> {
+export async function getUserLedger(userName: String): Promise<LedgerEntry> {
   const balance = await knex('ledger')
     .select('usd', 'btc', 'doge', 'ltc', 'xmr', 'created', 'user_id', 'users.id', 'users.name')
     .join('users', 'users.id', 'ledger.user_id')
-    .where('users.id', userId)
+    .where('users.name', userName)
     .orderBy('created', 'desc')
   return {
     userName: balance[0].name,
-    usd: balance[0].usd,
-    btc: balance[0].btc,
-    doge: balance[0].doge,
-    ltc: balance[0].ltc,
-    xmr: balance[0].xmr,
+    USD: new BigNumber(balance[0].usd),
+    BTC: new BigNumber(balance[0].btc),
+    DOGE: new BigNumber(balance[0].doge),
+    LTC: new BigNumber(balance[0].ltc),
+    XMR: new BigNumber(balance[0].xmr),
     created: balance[0].created
   }
+}
+
+export async function saveLedgerEntry(ledger: LedgerEntry) {
+  const userId = await knex('ledger')
+    .select('id')
+    .where('userName', ledger.userName)
+
+  knex('ledger')
+    .insert(
+      {
+        user_id: userId,
+        usd: ledger.USD,
+        btc: ledger.BTC,
+        doge: ledger.DOGE,
+        ltc: ledger.LTC,
+        xmr: ledger.XMR
+      }
+    )
 }

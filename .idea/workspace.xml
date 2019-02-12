@@ -2,25 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="956c98e6-f7c5-430c-b7d6-f42e3f51e6c2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Exchange/src/crypto-exchange.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exchange/src/db-scripts.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Exchange/tests/exchange-tests.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PricingMonitor/src/cc-api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/PricingMonitor/src/cc-api.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PricingMonitor/src/db-scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/PricingMonitor/src/db-scripts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PricingMonitor/src/db-scripts.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/PricingMonitor/src/db-scripts.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PricingMonitor/src/db-scripts.ts" beforeDir="false" afterPath="$PROJECT_DIR$/PricingMonitor/src/db-scripts.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PricingMonitor/src/pricing-monitor.js" beforeDir="false" afterPath="$PROJECT_DIR$/PricingMonitor/src/pricing-monitor.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PricingMonitor/src/pricing-monitor.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/PricingMonitor/src/pricing-monitor.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PricingMonitor/src/pricing-monitor.ts" beforeDir="false" afterPath="$PROJECT_DIR$/PricingMonitor/src/pricing-monitor.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PricingMonitor/src/types.js" beforeDir="false" afterPath="$PROJECT_DIR$/Common/src/types.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PricingMonitor/src/types.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/Common/src/types.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PricingMonitor/src/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Common/src/types.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PricingMonitor/tests/db-tests.js" beforeDir="false" afterPath="$PROJECT_DIR$/PricingMonitor/tests/db-tests.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PricingMonitor/tests/db-tests.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/PricingMonitor/tests/db-tests.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PricingMonitor/tests/db-tests.ts" beforeDir="false" afterPath="$PROJECT_DIR$/PricingMonitor/tests/db-tests.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/20190208162245_currency.js" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/20190208162245_currency.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/20190210153122_monitor.js" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/20190210153122_monitor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Common/src/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Common/src/types.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exchange/src/crypto-exchange.js" beforeDir="false" afterPath="$PROJECT_DIR$/Exchange/src/crypto-exchange.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exchange/src/crypto-exchange.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/Exchange/src/crypto-exchange.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exchange/src/crypto-exchange.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Exchange/src/crypto-exchange.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exchange/src/db-scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/Exchange/src/db-scripts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exchange/src/db-scripts.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/Exchange/src/db-scripts.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exchange/src/db-scripts.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Exchange/src/db-scripts.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exchange/tests/exchange-tests.js" beforeDir="false" afterPath="$PROJECT_DIR$/Exchange/tests/exchange-tests.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exchange/tests/exchange-tests.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/Exchange/tests/exchange-tests.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Exchange/tests/exchange-tests.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Exchange/tests/exchange-tests.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -44,17 +36,17 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="gitignore" value="1" />
-          <entry key="js" value="15" />
+          <entry key="js" value="16" />
           <entry key="json" value="2" />
-          <entry key="ts" value="17" />
+          <entry key="ts" value="18" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="JSON" value="1" />
-          <entry key="JavaScript" value="15" />
+          <entry key="JavaScript" value="16" />
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="TypeScript" value="17" />
+          <entry key="TypeScript" value="18" />
           <entry key="tsconfig" value="1" />
         </counts>
       </usages-collector>
@@ -67,14 +59,14 @@
         <counts>
           <entry key="js" value="396" />
           <entry key="json" value="4" />
-          <entry key="ts" value="7004" />
+          <entry key="ts" value="9328" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JSON" value="2" />
           <entry key="JavaScript" value="396" />
-          <entry key="TypeScript" value="7004" />
+          <entry key="TypeScript" value="9328" />
           <entry key="tsconfig" value="2" />
         </counts>
       </usages-collector>
@@ -83,22 +75,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PricingMonitor/tests/db-tests.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="9" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
-              <folding>
-                <element signature="e#0#29#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Common/src/types.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="10" selection-start-line="16" selection-start-column="2" selection-end-line="16" selection-end-column="10" />
+            <state relative-caret-position="375">
+              <caret line="25" column="17" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -106,8 +86,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PricingMonitor/src/db-scripts.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="26" lean-forward="true" selection-start-line="1" selection-end-line="2" />
+            <state relative-caret-position="165">
+              <caret line="11" column="15" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="15" />
             </state>
           </provider>
         </entry>
@@ -115,11 +95,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Exchange/src/crypto-exchange.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="52" lean-forward="true" selection-start-line="14" selection-start-column="52" selection-end-line="14" selection-end-column="52" />
+            <state relative-caret-position="45">
+              <caret line="3" column="32" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="32" />
               <folding>
-                <element signature="e#0#59#0" expanded="true" />
+                <element signature="e#0#69#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Exchange/src/db-scripts.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="254">
+              <caret line="24" column="29" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -127,8 +116,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Exchange/src/db-scripts.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" selection-start-line="2" selection-end-line="2" />
+            <state relative-caret-position="479">
+              <caret line="40" column="16" lean-forward="true" selection-start-line="40" selection-start-column="16" selection-end-line="40" selection-end-column="16" />
+              <folding>
+                <element signature="e#0#71#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -136,8 +128,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Exchange/tests/exchange-tests.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-18">
-              <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+            <state relative-caret-position="315">
+              <caret line="21" column="41" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
+              <folding>
+                <element signature="e#0#51#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PricingMonitor/src/cc-api.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="12" column="1" selection-start-line="12" selection-end-line="12" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -145,8 +149,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Exchange/src/crypto-exchange.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+            <state relative-caret-position="15">
+              <caret line="35" column="22" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -161,19 +165,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/migrations/20190208162245_currency.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" selection-start-line="18" selection-end-line="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/migrations/20190211145905_ledger.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="29" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="29" />
+            <state relative-caret-position="30">
+              <caret line="2" selection-start-line="2" selection-end-line="11" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -220,11 +215,11 @@
         <option value="$PROJECT_DIR$/seeds/users.js" />
         <option value="$PROJECT_DIR$/Exchange/crypto-exchange.ts" />
         <option value="$PROJECT_DIR$/PricingMonitor/tests/db-tests.ts" />
-        <option value="$PROJECT_DIR$/Common/src/types.ts" />
         <option value="$PROJECT_DIR$/Exchange/tests/monitor-tests.ts" />
         <option value="$PROJECT_DIR$/PricingMonitor/src/db-scripts.ts" />
-        <option value="$PROJECT_DIR$/Exchange/src/crypto-exchange.ts" />
         <option value="$PROJECT_DIR$/Exchange/tests/exchange-tests.ts" />
+        <option value="$PROJECT_DIR$/Common/src/types.ts" />
+        <option value="$PROJECT_DIR$/Exchange/src/crypto-exchange.ts" />
         <option value="$PROJECT_DIR$/Exchange/src/db-scripts.ts" />
       </list>
     </option>
@@ -304,12 +299,6 @@
               <item name="salt-test" type="462c0819:PsiDirectoryNode" />
               <item name="PricingMonitor" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="salt-test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="salt-test" type="462c0819:PsiDirectoryNode" />
-              <item name="PricingMonitor" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -461,20 +450,11 @@
       <option name="presentableId" value="Default" />
       <updated>1549667412423</updated>
       <workItem from="1549667414458" duration="13008000" />
-      <workItem from="1549828269689" duration="13588000" />
+      <workItem from="1549828269689" duration="20292000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="exchange_tests - 2019.02.11 at 17h 53m 43s.xml">
-      <configuration name="exchange tests" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
-    <history-entry file="exchange_tests - 2019.02.11 at 17h 54m 58s.xml">
-      <configuration name="exchange tests" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
-    <history-entry file="exchange_tests - 2019.02.11 at 17h 55m 08s.xml">
-      <configuration name="exchange tests" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
     <history-entry file="exchange_tests - 2019.02.11 at 17h 56m 39s.xml">
       <configuration name="exchange tests" configurationId="mocha-javascript-test-runner" />
     </history-entry>
@@ -496,15 +476,24 @@
     <history-entry file="exchange_tests - 2019.02.11 at 18h 01m 38s.xml">
       <configuration name="exchange tests" configurationId="mocha-javascript-test-runner" />
     </history-entry>
+    <history-entry file="exchange_tests - 2019.02.11 at 18h 03m 16s.xml">
+      <configuration name="exchange tests" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="exchange_tests - 2019.02.12 at 11h 50m 22s.xml">
+      <configuration name="exchange tests" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="exchange_tests - 2019.02.12 at 11h 50m 58s.xml">
+      <configuration name="exchange tests" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26596000" />
+    <option name="totallyTimeSpent" value="33300000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="873" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24947146" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24947146" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="DB Browser" order="2" />
       <window_info id="Project Explorer" order="3" />
@@ -512,7 +501,7 @@
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.05377721" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.0" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -647,13 +636,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PricingMonitor/src/cc-api.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/PricingMonitor/src/pricing-monitor.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -691,34 +673,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PricingMonitor/src/db-scripts.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="26" lean-forward="true" selection-start-line="1" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Exchange/src/crypto-exchange.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Common/src/types.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="10" selection-start-line="16" selection-start-column="2" selection-end-line="16" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Exchange/src/crypto-exchange.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="52" lean-forward="true" selection-start-line="14" selection-start-column="52" selection-end-line="14" selection-end-column="52" />
-          <folding>
-            <element signature="e#0#59#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="15">
+          <caret line="35" column="22" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -729,24 +687,68 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Exchange/src/db-scripts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="24" column="29" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PricingMonitor/src/cc-api.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="12" column="1" selection-start-line="12" selection-end-line="12" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PricingMonitor/src/db-scripts.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="15" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Common/src/types.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="17" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/migrations/20190211145905_ledger.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="29" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="29" />
+        <state relative-caret-position="30">
+          <caret line="2" selection-start-line="2" selection-end-line="11" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Exchange/tests/exchange-tests.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-18">
-          <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+        <state relative-caret-position="315">
+          <caret line="21" column="41" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#51#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Exchange/src/crypto-exchange.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="32" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#69#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Exchange/src/db-scripts.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        <state relative-caret-position="479">
+          <caret line="40" column="16" lean-forward="true" selection-start-line="40" selection-start-column="16" selection-end-line="40" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#71#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

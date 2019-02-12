@@ -15,21 +15,36 @@ async function getCurrentPrice(coinName) {
     };
 }
 exports.getCurrentPrice = getCurrentPrice;
-async function getUserLedger(userId) {
+async function getUserLedger(userName) {
     const balance = await knex('ledger')
         .select('usd', 'btc', 'doge', 'ltc', 'xmr', 'created', 'user_id', 'users.id', 'users.name')
         .join('users', 'users.id', 'ledger.user_id')
-        .where('users.id', userId)
+        .where('users.name', userName)
         .orderBy('created', 'desc');
     return {
         userName: balance[0].name,
-        usd: balance[0].usd,
-        btc: balance[0].btc,
-        doge: balance[0].doge,
-        ltc: balance[0].ltc,
-        xmr: balance[0].xmr,
+        USD: new bignumber_js_1.default(balance[0].usd),
+        BTC: new bignumber_js_1.default(balance[0].btc),
+        DOGE: new bignumber_js_1.default(balance[0].doge),
+        LTC: new bignumber_js_1.default(balance[0].ltc),
+        XMR: new bignumber_js_1.default(balance[0].xmr),
         created: balance[0].created
     };
 }
 exports.getUserLedger = getUserLedger;
+async function saveLedgerEntry(ledger) {
+    const userId = await knex('ledger')
+        .select('id')
+        .where('userName', ledger.userName);
+    knex('ledger')
+        .insert({
+        user_id: userId,
+        usd: ledger.USD,
+        btc: ledger.BTC,
+        doge: ledger.DOGE,
+        ltc: ledger.LTC,
+        xmr: ledger.XMR
+    });
+}
+exports.saveLedgerEntry = saveLedgerEntry;
 //# sourceMappingURL=db-scripts.js.map

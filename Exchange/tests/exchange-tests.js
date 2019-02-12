@@ -17,7 +17,7 @@ describe('exchange tests', function () {
         chai_1.assert(price.usdPrice.isEqualTo(new bignumber_js_1.default(1)));
     });
     it('can get a users most recent balance', async function () {
-        console.log(await db_scripts_2.getUserLedger(1));
+        console.log(await db_scripts_2.getUserLedger('Huey'));
         chai_1.assert(true);
     });
 });
