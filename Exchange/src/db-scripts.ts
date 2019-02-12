@@ -1,5 +1,6 @@
 import {CoinName, CoinPrice, LedgerEntry} from "../../Common/src/types"
 import BigNumber from "bignumber.js";
+import {fromSatoshi, toSatoshi} from "../../Common/src/conversions";
 const knex = require('../../knex')
 
 export async function getCurrentPrice(coinName: CoinName): Promise<CoinPrice> {
@@ -25,28 +26,30 @@ export async function getUserLedger(userName: String): Promise<LedgerEntry> {
   return {
     userName: balance[0].name,
     USD: new BigNumber(balance[0].usd),
-    BTC: new BigNumber(balance[0].btc),
-    DOGE: new BigNumber(balance[0].doge),
-    LTC: new BigNumber(balance[0].ltc),
-    XMR: new BigNumber(balance[0].xmr),
+    BTC: fromSatoshi(balance[0].btc),
+    DOGE: fromSatoshi(balance[0].doge),
+    LTC: fromSatoshi(balance[0].ltc),
+    XMR: fromSatoshi(balance[0].xmr),
     created: balance[0].created
   }
 }
 
 export async function saveLedgerEntry(ledger: LedgerEntry) {
-  const userId = await knex('ledger')
+  console.log(ledger)
+  const userId = await knex('users')
     .select('id')
-    .where('userName', ledger.userName)
-
-  knex('ledger')
+    .where('name', ledger.userName)
+  const newLedger = await knex('ledger')
     .insert(
       {
-        user_id: userId,
-        usd: ledger.USD,
-        btc: ledger.BTC,
-        doge: ledger.DOGE,
-        ltc: ledger.LTC,
-        xmr: ledger.XMR
+        user_id: userId[0].id,
+        usd: parseFloat(ledger.USD.toString()).toFixed(2),
+        btc: toSatoshi(ledger.BTC),
+        doge: toSatoshi(ledger.DOGE),
+        ltc: toSatoshi(ledger.LTC),
+        xmr: toSatoshi(ledger.XMR)
       }
     )
+    .returning('*')
+  return newLedger
 }

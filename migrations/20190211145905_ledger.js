@@ -3,7 +3,7 @@ exports.up = function(knex) {
   return knex.schema.createTable('ledger', function(table){
     table.increments()
     table.integer('user_id').references('id').inTable('users').notNullable()
-    table.bigInteger('usd').notNullable()
+    table.decimal('usd', 10, 2).notNullable()
     table.bigInteger('btc').notNullable()
     table.bigInteger('doge').notNullable()
     table.bigInteger('ltc').notNullable()

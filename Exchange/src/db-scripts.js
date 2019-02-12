@@ -1,6 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const bignumber_js_1 = require("bignumber.js");
+const conversions_1 = require("../../Common/src/conversions");
 const knex = require('../../knex');
 async function getCurrentPrice(coinName) {
     const coinPrice = await knex('price')
@@ -24,27 +25,30 @@ async function getUserLedger(userName) {
     return {
         userName: balance[0].name,
         USD: new bignumber_js_1.default(balance[0].usd),
-        BTC: new bignumber_js_1.default(balance[0].btc),
-        DOGE: new bignumber_js_1.default(balance[0].doge),
-        LTC: new bignumber_js_1.default(balance[0].ltc),
-        XMR: new bignumber_js_1.default(balance[0].xmr),
+        BTC: conversions_1.fromSatoshi(balance[0].btc),
+        DOGE: conversions_1.fromSatoshi(balance[0].doge),
+        LTC: conversions_1.fromSatoshi(balance[0].ltc),
+        XMR: conversions_1.fromSatoshi(balance[0].xmr),
         created: balance[0].created
     };
 }
 exports.getUserLedger = getUserLedger;
 async function saveLedgerEntry(ledger) {
-    const userId = await knex('ledger')
+    console.log(ledger);
+    const userId = await knex('users')
         .select('id')
-        .where('userName', ledger.userName);
-    knex('ledger')
+        .where('name', ledger.userName);
+    const newLedger = await knex('ledger')
         .insert({
-        user_id: userId,
-        usd: ledger.USD,
-        btc: ledger.BTC,
-        doge: ledger.DOGE,
-        ltc: ledger.LTC,
-        xmr: ledger.XMR
-    });
+        user_id: userId[0].id,
+        usd: parseFloat(ledger.USD.toString()).toFixed(2),
+        btc: conversions_1.toSatoshi(ledger.BTC),
+        doge: conversions_1.toSatoshi(ledger.DOGE),
+        ltc: conversions_1.toSatoshi(ledger.LTC),
+        xmr: conversions_1.toSatoshi(ledger.XMR)
+    })
+        .returning('*');
+    return newLedger;
 }
 exports.saveLedgerEntry = saveLedgerEntry;
 //# sourceMappingURL=db-scripts.js.map
