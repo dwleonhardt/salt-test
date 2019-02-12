@@ -5,7 +5,7 @@ const db_scripts_1 = require("./db-scripts");
 async function pricingMonitor() {
     const settings = await db_scripts_1.getMonitorSettings();
     if (settings.enabled) {
-        await tbd();
+        await batchPrices();
         console.log('Price check');
         setTimeout(pricingMonitor, settings.timeout);
     }
@@ -15,10 +15,10 @@ async function pricingMonitor() {
     }
 }
 exports.pricingMonitor = pricingMonitor;
-async function tbd() {
+async function batchPrices() {
     const prices = await cc_api_1.getPrices();
     db_scripts_1.savePrices(prices);
 }
-exports.tbd = tbd;
+exports.batchPrices = batchPrices;
 (() => pricingMonitor())();
 //# sourceMappingURL=pricing-monitor.js.map

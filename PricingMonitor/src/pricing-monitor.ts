@@ -4,7 +4,7 @@ import {getMonitorSettings, savePrices} from "./db-scripts";
 export async function pricingMonitor() {
   const settings = await getMonitorSettings()
   if (settings.enabled) {
-    await tbd()
+    await batchPrices()
     console.log('Price check')
     setTimeout(pricingMonitor, settings.timeout)
   }
@@ -14,7 +14,7 @@ export async function pricingMonitor() {
   }
 }
 
-export async function tbd() {
+export async function batchPrices() {
   const prices = await getPrices()
   savePrices(prices)
 }

@@ -12,3 +12,13 @@ export interface MonitorSettings {
   enabled: boolean,
   timeout: number
 }
+
+export interface LedgerEntry {
+  userName: string,
+  usd: number,
+  btc: number,
+  doge: number,
+  ltc: number,
+  xmr: number,
+  created: Date
+}

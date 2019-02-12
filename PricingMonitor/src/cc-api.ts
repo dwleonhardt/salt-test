@@ -1,4 +1,4 @@
-import {CoinName, CoinPrice} from "./types";
+import {CoinName, CoinPrice} from "../../Common/src/types";
 import BigNumber from "bignumber.js";
 
 const axios = require('axios')
