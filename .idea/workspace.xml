@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="956c98e6-f7c5-430c-b7d6-f42e3f51e6c2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Common/src/conversions.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exchange/src/db-scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/Exchange/src/db-scripts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exchange/src/db-scripts.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/Exchange/src/db-scripts.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exchange/src/db-scripts.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Exchange/src/db-scripts.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exchange/tests/exchange-tests.js" beforeDir="false" afterPath="$PROJECT_DIR$/Exchange/tests/exchange-tests.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exchange/tests/exchange-tests.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/Exchange/tests/exchange-tests.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Exchange/tests/exchange-tests.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Exchange/tests/exchange-tests.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/20190211145905_ledger.js" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/20190211145905_ledger.js" afterDir="false" />
-    </list>
+    <list default="true" id="956c98e6-f7c5-430c-b7d6-f42e3f51e6c2" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -57,14 +47,14 @@
         <counts>
           <entry key="js" value="463" />
           <entry key="json" value="4" />
-          <entry key="ts" value="10153" />
+          <entry key="ts" value="10157" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JSON" value="2" />
           <entry key="JavaScript" value="463" />
-          <entry key="TypeScript" value="10153" />
+          <entry key="TypeScript" value="10157" />
           <entry key="tsconfig" value="2" />
         </counts>
       </usages-collector>
@@ -153,8 +143,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Exchange/tests/exchange-tests.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="34" column="5" lean-forward="true" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+            <state relative-caret-position="117">
+              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
             </state>
           </provider>
         </entry>
@@ -254,55 +244,6 @@
             <path>
               <item name="salt-test" type="b2602c69:ProjectViewProjectNode" />
               <item name="salt-test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="salt-test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="salt-test" type="462c0819:PsiDirectoryNode" />
-              <item name="Common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="salt-test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="salt-test" type="462c0819:PsiDirectoryNode" />
-              <item name="Common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="salt-test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="salt-test" type="462c0819:PsiDirectoryNode" />
-              <item name="Exchange" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="salt-test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="salt-test" type="462c0819:PsiDirectoryNode" />
-              <item name="Exchange" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="salt-test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="salt-test" type="462c0819:PsiDirectoryNode" />
-              <item name="Exchange" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="salt-test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="salt-test" type="462c0819:PsiDirectoryNode" />
-              <item name="migrations" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="salt-test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="salt-test" type="462c0819:PsiDirectoryNode" />
-              <item name="PricingMonitor" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="salt-test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="salt-test" type="462c0819:PsiDirectoryNode" />
-              <item name="PricingMonitor" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="salt-test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="salt-test" type="462c0819:PsiDirectoryNode" />
-              <item name="seeds" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -455,7 +396,7 @@
       <option name="presentableId" value="Default" />
       <updated>1549667412423</updated>
       <workItem from="1549667414458" duration="13008000" />
-      <workItem from="1549828269689" duration="24035000" />
+      <workItem from="1549828269689" duration="25235000" />
     </task>
     <servers />
   </component>
@@ -492,13 +433,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37043000" />
+    <option name="totallyTimeSpent" value="38243000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="873" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24947146" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24947146" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="DB Browser" order="2" />
       <window_info id="Project Explorer" order="3" />
@@ -506,7 +447,7 @@
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.33674777" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.29065302" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -763,8 +704,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Exchange/tests/exchange-tests.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="34" column="5" lean-forward="true" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+        <state relative-caret-position="117">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
         </state>
       </provider>
     </entry>
