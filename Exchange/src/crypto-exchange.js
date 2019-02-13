@@ -33,4 +33,22 @@ async function getOrderPrice(order) {
     }
 }
 exports.getOrderPrice = getOrderPrice;
+async function getPortfolio(userName) {
+    const ledger = await db_scripts_1.getUserLedger(userName);
+    const btc = await db_scripts_1.getCurrentPrice('BTC');
+    const ltc = await db_scripts_1.getCurrentPrice('LTC');
+    const doge = await db_scripts_1.getCurrentPrice('DOGE');
+    const xmr = await db_scripts_1.getCurrentPrice('XMR');
+    const balances = [
+        { currency: 'BTC', usdValue: ledger.BTC.multipliedBy(btc.usdPrice) },
+        { currency: 'LTC', usdValue: ledger.BTC.multipliedBy(ltc.usdPrice) },
+        { currency: 'DOGE', usdValue: ledger.BTC.multipliedBy(doge.usdPrice) },
+        { currency: 'XMR', usdValue: ledger.BTC.multipliedBy(xmr.usdPrice) }
+    ];
+    return {
+        userName: userName,
+        balances: balances
+    };
+}
+exports.getPortfolio = getPortfolio;
 //# sourceMappingURL=crypto-exchange.js.map

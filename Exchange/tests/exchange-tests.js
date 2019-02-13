@@ -34,5 +34,11 @@ describe('exchange tests', function () {
         ledgerEntry.BTC.toNumber();
         chai_1.assert(ledgerEntry.BTC.toNumber() === ledger.BTC.toNumber() + 0.001);
     });
+    it('can get a full user portfolio', async function () {
+        const portfolio = await crypto_exchange_1.getPortfolio('Huey');
+        console.log(portfolio.balances[0].usdValue.toString());
+        console.log(await crypto_exchange_1.getPortfolio('Huey'));
+        chai_1.assert(true);
+    });
 });
 //# sourceMappingURL=exchange-tests.js.map

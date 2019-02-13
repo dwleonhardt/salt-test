@@ -17,6 +17,21 @@ export async function getCurrentPrice(coinName: CoinName): Promise<CoinPrice> {
   }
 }
 
+export async function getCurrentPrices(): Promise<Array<CoinPrice>> {
+  const coinPrices = await knex('price')
+    .select('*')
+    .orderBy('created', 'desc')
+    .limit(4)
+
+  return coinPrices.map((price: any) => {
+    return {
+      name: price.name,
+      usdPrice: new BigNumber(price.price_usd),
+      btcPrice: new BigNumber(price.price_btc)
+    }
+  })
+}
+
 export async function getUserLedger(userName: String): Promise<LedgerEntry> {
   const balance = await knex('ledger')
     .select('usd', 'btc', 'doge', 'ltc', 'xmr', 'created', 'user_id', 'users.id', 'users.name')

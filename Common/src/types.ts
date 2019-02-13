@@ -35,3 +35,13 @@ export interface OrderPrice {
   name: CoinName,
   price: BigNumber
 }
+
+export interface PortfolioValue {
+  currency: CoinName,
+  usdValue: BigNumber
+}
+
+export interface Portfolio {
+  userName: string,
+  balances: Array<PortfolioValue>
+}

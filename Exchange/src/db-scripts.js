@@ -16,6 +16,20 @@ async function getCurrentPrice(coinName) {
     };
 }
 exports.getCurrentPrice = getCurrentPrice;
+async function getCurrentPrices() {
+    const coinPrices = await knex('price')
+        .select('*')
+        .orderBy('created', 'desc')
+        .limit(4);
+    return coinPrices.map((price) => {
+        return {
+            name: price.name,
+            usdPrice: new bignumber_js_1.default(price.price_usd),
+            btcPrice: new bignumber_js_1.default(price.price_btc)
+        };
+    });
+}
+exports.getCurrentPrices = getCurrentPrices;
 async function getUserLedger(userName) {
     const balance = await knex('ledger')
         .select('usd', 'btc', 'doge', 'ltc', 'xmr', 'created', 'user_id', 'users.id', 'users.name')

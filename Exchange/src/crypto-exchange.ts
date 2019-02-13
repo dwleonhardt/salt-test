@@ -1,5 +1,5 @@
-import {LedgerEntry, Order, OrderPrice} from '../../Common/src/types'
-import {getCurrentPrice, getUserLedger, saveLedgerEntry} from './db-scripts'
+import {LedgerEntry, Order, OrderPrice, Portfolio, PortfolioValue} from '../../Common/src/types'
+import {getCurrentPrice, getCurrentPrices, getUserLedger, saveLedgerEntry} from './db-scripts'
 
 export async function placeOrder(order: Order): Promise<LedgerEntry> {
   const orderPrice = await getOrderPrice(order)
@@ -34,5 +34,24 @@ export async function getOrderPrice(order: Order): Promise<OrderPrice> {
   }
   else {
     throw Error('Purchase order currency is not supported at this time')
+  }
+}
+
+export async function getPortfolio(userName: string): Promise<Portfolio> {
+  const ledger = await getUserLedger(userName)
+  const btc = await getCurrentPrice('BTC')
+  const ltc = await getCurrentPrice('LTC')
+  const doge = await getCurrentPrice('DOGE')
+  const xmr = await getCurrentPrice('XMR')
+  const balances: Array<PortfolioValue> = [
+    {currency: 'BTC', usdValue: ledger.BTC.multipliedBy(btc.usdPrice)},
+    {currency: 'LTC', usdValue: ledger.BTC.multipliedBy(ltc.usdPrice)},
+    {currency: 'DOGE', usdValue: ledger.BTC.multipliedBy(doge.usdPrice)},
+    {currency: 'XMR', usdValue: ledger.BTC.multipliedBy(xmr.usdPrice)}
+  ]
+
+  return {
+    userName: userName,
+    balances: balances
   }
 }
