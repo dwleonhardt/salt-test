@@ -41,9 +41,9 @@ async function getPortfolio(userName) {
     const xmr = await db_scripts_1.getCurrentPrice('XMR');
     const balances = [
         { currency: 'BTC', usdValue: ledger.BTC.multipliedBy(btc.usdPrice) },
-        { currency: 'LTC', usdValue: ledger.BTC.multipliedBy(ltc.usdPrice) },
-        { currency: 'DOGE', usdValue: ledger.BTC.multipliedBy(doge.usdPrice) },
-        { currency: 'XMR', usdValue: ledger.BTC.multipliedBy(xmr.usdPrice) }
+        { currency: 'LTC', usdValue: ledger.LTC.multipliedBy(ltc.usdPrice) },
+        { currency: 'DOGE', usdValue: ledger.DOGE.multipliedBy(doge.usdPrice) },
+        { currency: 'XMR', usdValue: ledger.XMR.multipliedBy(xmr.usdPrice) }
     ];
     return {
         userName: userName,

@@ -45,9 +45,9 @@ export async function getPortfolio(userName: string): Promise<Portfolio> {
   const xmr = await getCurrentPrice('XMR')
   const balances: Array<PortfolioValue> = [
     {currency: 'BTC', usdValue: ledger.BTC.multipliedBy(btc.usdPrice)},
-    {currency: 'LTC', usdValue: ledger.BTC.multipliedBy(ltc.usdPrice)},
-    {currency: 'DOGE', usdValue: ledger.BTC.multipliedBy(doge.usdPrice)},
-    {currency: 'XMR', usdValue: ledger.BTC.multipliedBy(xmr.usdPrice)}
+    {currency: 'LTC', usdValue: ledger.LTC.multipliedBy(ltc.usdPrice)},
+    {currency: 'DOGE', usdValue: ledger.DOGE.multipliedBy(doge.usdPrice)},
+    {currency: 'XMR', usdValue: ledger.XMR.multipliedBy(xmr.usdPrice)}
   ]
 
   return {
