@@ -1,6 +1,6 @@
 import { assert } from 'chai'
-import {getApiPrice} from "../src/cc-api";
-import {pricingMonitor} from "../src/pricing-monitor";
+import { getApiPrice } from '../src/cc-api'
+import { pricingMonitor } from '../src/pricing-monitor'
 
 describe('pricing monitor http tests', function() {
   it('can get bitcoin pricing data', async function() {

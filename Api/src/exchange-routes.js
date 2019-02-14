@@ -16,6 +16,10 @@ router.get('/portfolio', async (req, res) => {
     const portfolio = await crypto_exchange_1.getPortfolio(req.query.userName);
     res.send(portfolio);
 });
+router.get('/price', async (req, res) => {
+    const price = await db_scripts_1.getCurrentPrice(req.query.currency);
+    res.send(price);
+});
 router.post('/order', async (req, res) => {
     const request = req.body;
     const order = {

@@ -1,4 +1,4 @@
-import { getUserLedger } from '../../Exchange/src/db-scripts'
+import {getCurrentPrice, getUserLedger} from '../../Exchange/src/db-scripts'
 import { Router, Request, Response } from 'express'
 import bodyParser = require('body-parser')
 import {getPortfolio, placeOrder} from "../../Exchange/src/crypto-exchange";
@@ -19,6 +19,11 @@ router.get('/ledger', async (req: Request, res: Response) => {
 router.get('/portfolio', async (req: Request, res: Response) => {
   const portfolio = await getPortfolio(req.query.userName)
   res.send(portfolio)
+})
+
+router.get('/price', async (req: Request, res: Response) => {
+  const price = await getCurrentPrice(req.query.currency)
+  res.send(price)
 })
 
 router.post('/order', async (req: Request, res: Response) => {
