@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="956c98e6-f7c5-430c-b7d6-f42e3f51e6c2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/src/exchange-routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/Api/src/exchange-routes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/src/exchange-routes.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/Api/src/exchange-routes.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Api/src/exchange-routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Api/src/exchange-routes.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PricingMonitor/tests/pricing-tests.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/PricingMonitor/tests/pricing-tests.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PricingMonitor/tests/pricing-tests.ts" beforeDir="false" afterPath="$PROJECT_DIR$/PricingMonitor/tests/pricing-tests.ts" afterDir="false" />
-    </list>
+    <list default="true" id="956c98e6-f7c5-430c-b7d6-f42e3f51e6c2" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -22,7 +15,7 @@
     <session id="-1012600338">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.18" value="1" />
           <entry key="project.opened" value="2" />
@@ -438,7 +431,7 @@
       <option name="presentableId" value="Default" />
       <updated>1549667412423</updated>
       <workItem from="1549667414458" duration="13008000" />
-      <workItem from="1549828269689" duration="42740000" />
+      <workItem from="1549828269689" duration="42855000" />
     </task>
     <servers />
   </component>
@@ -475,7 +468,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55748000" />
+    <option name="totallyTimeSpent" value="55863000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="873" extended-state="6" />
@@ -489,7 +482,7 @@
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.35851473" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.35851473" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
